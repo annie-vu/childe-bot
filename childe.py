@@ -8,7 +8,7 @@ import os							# Retrieve values from .env/Heroku
 import random						# Randomize selection
 import time							# Set cooldown interval
 from discord.ext import commands	# For Discord bot
-from quotes_test import *			# Import quotes
+from quotes import *			# Import quotes
 
 logging.basicConfig(level=logging.INFO)
 
