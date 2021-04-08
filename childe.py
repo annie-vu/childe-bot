@@ -9,13 +9,11 @@ import random						# Randomize selection
 import time							# Set cooldown interval
 from discord.ext import commands	# For Discord bot
 from quotes_test import *			# Import quotes
-from dotenv import load_dotenv      # for .env
 
-load_dotenv()
 logging.basicConfig(level=logging.INFO)
 
-BOT_TOKEN 	= os.environ('DISCORD_TOKEN')
-GUILD_ID 	= os.environ('GUILD_ID')
+BOT_TOKEN 	= os.environ.get('DISCORD_TOKEN')
+GUILD_ID 	= os.environ.get('GUILD_ID')
 
 ### ------------- ###
 ### BOT  SETTINGS ###
