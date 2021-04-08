@@ -1,0 +1,9 @@
+Childe bot release notes
+
+v1.0:
+- Able to regurgitate voice lines from game through commands
+- Can select randomly from a list of items separated by pipe
+- Chooses a number between two supplied ints
+
+v1.1:
+- Formatting for choose command not as strict (spaces dont need to be on either side of pipe)
