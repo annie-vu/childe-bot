@@ -14,8 +14,8 @@ from dotenv import load_dotenv      # for .env
 load_dotenv()
 logging.basicConfig(level=logging.INFO)
 
-BOT_TOKEN 	= os.getenv('DISCORD_TOKEN')
-GUILD_ID 	= os.getenv('GUILD_ID')
+BOT_TOKEN 	= os.environ('DISCORD_TOKEN')
+GUILD_ID 	= os.environ('GUILD_ID')
 
 ### ------------- ###
 ### BOT  SETTINGS ###
