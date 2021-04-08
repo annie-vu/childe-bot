@@ -35,8 +35,8 @@ COMMAND_CHOOSE		= 'choose'
 COMMAND_RNG			= 'rng'
 COMMAND_EIGHTBALL	= 'qq'
 
-PREFIX 				= 'tart! '  # TODO: Changes the prefix of the bot (type abc! bd for birthday command)
-PRESENCE			= 'with your life | tart! ?'  # TODO: Changes the bot's presence (Playing with Charmandie)
+PREFIX 				= 'childe! '  # TODO: Changes the prefix of the bot (type abc! bd for birthday command)
+PRESENCE			= 'with your life | childe! ?'  # TODO: Changes the bot's presence (Playing with Charmandie)
 
 ### ------------- ###
 ###   BOT VARS    ###

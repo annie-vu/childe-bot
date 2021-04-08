@@ -7,3 +7,6 @@ v1.0:
 
 v1.1:
 - Formatting for choose command not as strict (spaces dont need to be on either side of pipe)
+- 8ball added - childe gives random answers to yes/no questions now
+- ? gives commands list, removed 'about' and added to 'chat' command
+- Added some fake dialogue lines
