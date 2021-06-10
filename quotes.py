@@ -12,6 +12,20 @@ quote_help = \
 	"Rng = 'rng [int1] [int2]'\n"
 	"8ball = 'qq'")
 
+quote_react = [
+	"<:childe_sus_smile:828859134500667412>",
+	"<:childe_oh_no:829471579372388362>",
+	"<:childe_HUH:828861236035715123>",
+	"<:childe_heh:828858828593561620>",
+	"<:childe_happy:828858962652430346>",
+	"<:childe_clean:828859299794780190>",
+	"<:childe_angry:828860167076053032>",
+	"<:childe_no_thank:828860439923654656>",
+	"<:childe_tears:831666129717166100>",
+	"<:childe_weh:828860626361122838>",
+	"<:childe_wowza:829083115967217684>"
+]
+
 quote_insult = [
 	"This place is pretty dead... By which I mean, there's nothing to kill.",
 	"You know, there are better ways to seek out our enemies than... well, standing here.",

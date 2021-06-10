@@ -13,3 +13,7 @@ v1.1:
 - 8ball added - childe gives random answers to yes/no questions now
 - Added some fake dialogue lines
 - bot token moved to env variable
+
+v1.2:
+- add in dialogue when @ childe
+- childe now randomly reacts with emoji when you say his name ('childe' or 'tart')
