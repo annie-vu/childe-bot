@@ -17,3 +17,7 @@ v1.1:
 v1.2:
 - add in dialogue when @ childe
 - childe now randomly reacts with emoji when you say his name ('childe' or 'tart')
+
+v1.2.1:
+- fix commands for childe since the on_message broke them
+- childe no longer reacts to emoji with his name in it
