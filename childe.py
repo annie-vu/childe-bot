@@ -6,6 +6,7 @@ import logging  # Enables logging for message counting
 import io
 import os  # Retrieve values from .env/Heroku
 import random  # Randomize selection
+import re  # Regex
 import time  # Set cooldown interval
 from discord.ext import commands  # For Discord bot
 from quotes import *  # Import quotes
@@ -34,7 +35,7 @@ COMMAND_RNG = 'rng'
 COMMAND_EIGHTBALL = 'qq'
 
 PREFIX = 'childe! '  # TODO: Changes the prefix of the bot (type abc! bd for birthday command)
-PRESENCE = 'with your life | childe! ?'  # TODO: Changes the bot's presence (Playing with Charmandie)
+PRESENCE = 'with your heart | childe! ?'  # TODO: Changes the bot's presence (Playing with Charmandie)
 
 ### ------------- ###
 ###   BOT VARS    ###
@@ -56,22 +57,19 @@ async def on_ready():
 
 @bot.event
 async def on_message(ctx):
-    #  Ignore messages sent by bot
-    if ctx.author == bot.user:
-        return
-
     # Mention bot
     if bot.user.mentioned_in(ctx):
         await ctx.channel.send(
             'Oh? Are you calling me to have a quick spar comrade? <:childe_happy:828858962652430346>')
-        return
 
     msg = ctx.content.lower()  # change to lower case str
     nameList = ['childe', 'tart']
-    if any(word in msg for word in nameList):
+    if any(word in msg for word in nameList) and not ctx.author == bot.user and not msg.startswith('childe! ') \
+            and not bool(re.search('<:.*childe.*>', msg)) and not bool(re.search('<:.*tartaglia.*>', msg)):
         response = random.choice(quote_react)
         await ctx.channel.send(response.format(ctx.author.display_name))
-        return
+
+    await bot.process_commands(ctx)
 
 
 ### ------------- ###
